@@ -1,11 +1,14 @@
 const express = require('express');
 const app = express();
-const PORT = 3000; // Puedes cambiar el puerto si es necesario
+const PORT = 3000; 
 
 let tasks = [
     { id: 1, description: 'Hacer la compra', completed: false },
     { id: 2, description: 'Estudiar para el examen', completed: true },
-    // Agrega más tareas aquí
+    { id: 3, description: 'Limpiar la casa', completed: false },
+    { id: 4, description: 'Hacer ejercicio', completed: true },
+    { id: 5, description: 'Terminar el informe', completed: false }
+    
 ];
 
 app.get('/tasks', (req, res) => {
